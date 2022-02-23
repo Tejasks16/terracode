@@ -7,9 +7,6 @@
 
 # Now create instance which will use these keys
 
-provider "aws" {
-  region     = "ap-south-1"
-}
 
 resource "aws_instance" "myfirst" {
   ami           = "ami-0447a12f28fddb066"
