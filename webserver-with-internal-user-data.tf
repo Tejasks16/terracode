@@ -1,8 +1,5 @@
 provider "aws" {
   region     = "ap-south-1"
-  tags = { 
-   Name = "webserver"
- }
 }
 
 #security group
@@ -43,7 +40,7 @@ resource "aws_instance" "webserver_internal_user" {
   /* the key zoomkey must be downloaded in your machine from where
   you are executing this code. So first create the key, download it
   and then use it */
-  key_name = "zoomkey"
+  /* key_name = "zoomkey" */
   user_data = <<-EOF
         #!/bin/bash
         sudo yum install httpd -y
