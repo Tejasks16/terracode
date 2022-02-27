@@ -3,3 +3,7 @@
 *.tfstate.backup
 terraform_ec2_key
 terraform_ec2_key.pub
+webserver-with-internal-user-data.tf.origin
+multiple-instance-of-provider.tf.origin
+ec2-instance-with-ssh-keys.tf.origin
+sample.tf.origin
